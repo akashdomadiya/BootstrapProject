@@ -1,0 +1,12 @@
+h1{
+  color:transparent;
+  text-align: center;
+  font-size: 8em;
+  font-family: sans-serif;
+  background-image:url(image1.jpg);
+  background-size:contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #222;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-wrapper {
+  background-color: #fff;
+  max-width: 960px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 70px rgba(255,255,255,0.5);
+}   
+.item-wrapper {
+  background-color: #fff;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  padding: 4px;
+}
+
+.item-wrapper .line {
+  background-color: #6c63ff;
+  position: absolute;
+}
+
+.item-wrapper .line span {
+  background-color: #e3e3e3;
+  position: inherit;
+  display: block;
+  transition: all 0.4s ease-out;
+}
+.item-wrapper .line-top{
+  top: 0;
+  left: 0;
+  width:100%;
+  height:4px;
+}
+.item-wrapper .line-right{
+  top: 0;
+  right: 0;
+  width:4px;
+  height:100%;
+}
+.item-wrapper .line-bottom{
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height:4px;
+}
+.item-wrapper .line-left {
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+}
+.item-wrapper .line-top span{
+  top:inherit;
+  left:inherit;
+  width:0;
+  height:100%;
+}
+.item-wrapper .line-right span{
+  top:inherit;
+  right:inherit;
+  width:100%;
+  height:0;
+}
+.item-wrapper .line-bottom span{
+  right:inherit;
+  bottom:inherit;
+  width:0;
+  height:100%;
+}
+.item-wrapper .line-left span {
+  left: inherit;
+  bottom: inherit;
+  width: 100%;
+  height: 0;
+}
+.item-wrapper:hover .line-top span,
+.item-wrapper:hover .line-bottom span{
+  width:100%;
+}
+.item-wrapper:hover .line-left span,
+.item-wrapper:hover .line-right span{
+  height:100%;
+}
+.item-wrapper > .item{
+  padding:40px 30px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+.item-wrapper > .item > h2{
+  font-size: 36px;
+  line-height: 40px;
+}
+.item-wrapper > .item > h2 .title{
+  color:#6c63ff;
+  font-weight: 800;
+}
+.item-wrapper > .item > p{
+  padding:30px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+  
